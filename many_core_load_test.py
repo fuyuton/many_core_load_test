@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     #プロセスを生成
     for i in range(n):
-        p.append( mp.Process(target=cal1, args=(queue,)) )
+        p.append( mp.Process(target=cal, args=(queue,)) )
 
     #プロセス実行
     for i in range(n):
